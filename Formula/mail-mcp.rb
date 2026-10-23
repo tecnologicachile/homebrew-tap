@@ -1,20 +1,20 @@
 class MailMcp < Formula
   desc "Email MCP server for AI agents over IMAP, SMTP, Microsoft Graph and EWS"
   homepage "https://mail-mcp.tecnologicachile.cl/"
-  version "0.6.0"
+  version "0.6.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tecnologicachile/mail-mcp/releases/download/v0.6.0/mail-mcp-aarch64-apple-darwin.tar.xz"
-      sha256 "1f2bd63da8a8db91471b1e8f3753642d060c6dc301dc6e048cee7d4eb2ab0f2b"
+      url "https://github.com/tecnologicachile/mail-mcp/releases/download/v0.6.1/mail-mcp-aarch64-apple-darwin.tar.xz"
+      sha256 "d8aedc770995d9e544c6384f0876d7ec109973db97dee9d11d412f66b77f2e03"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tecnologicachile/mail-mcp/releases/download/v0.6.0/mail-mcp-x86_64-apple-darwin.tar.xz"
-      sha256 "3b7910ddfab769314a02fb678aef0172a82384ff5b0c51f007bd2ec7d88ed55e"
+      url "https://github.com/tecnologicachile/mail-mcp/releases/download/v0.6.1/mail-mcp-x86_64-apple-darwin.tar.xz"
+      sha256 "9e647c318054974a6a2b8d15caa6c88178eb2c35f95e06874b135e412e0b55a3"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/tecnologicachile/mail-mcp/releases/download/v0.6.0/mail-mcp-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "3fa4cca38e9feafb60c8ce69ab98dc616f9f6d71fa96f1e6eee70e82bc32c7fa"
+    url "https://github.com/tecnologicachile/mail-mcp/releases/download/v0.6.1/mail-mcp-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "2b62c8d594454e4cf417165034fa11a70b87ac05aa386423a93f0a5cc2014b9f"
   end
   license "MIT"
 
